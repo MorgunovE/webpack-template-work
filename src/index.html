@@ -16,11 +16,12 @@
           <section id="promo" style="text-align:center;">
             <div class="container">
               <h1>Webpack Template</h1>
+              <button @click="component = !component">Show vue component</button>
             </div>
           </section>
 
           <!-- expamle vue component -->
-          <example-component />
+          <example-component v-if="component" />
         </div>
 
         <footer></footer>

@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      message: 'Example Vue component'
+      message: this.$store.getters.getMessage
     }
   }
 }
