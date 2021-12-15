@@ -70,7 +70,9 @@ section,
     padding: 20px 0;
   }
 }
-
+input {
+  border: 1px solid $border-light  ;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -104,3 +106,5 @@ section,
 
 // Modules:
 // example: @import "modules/my-module.scss";
+@import "common/buttons.scss";
+@import "common/controls.scss";

@@ -16,12 +16,17 @@
           <section id="promo" style="text-align:center;">
             <div class="container">
               <h1>Webpack Template</h1>
-              <button @click="component = !component">Show vue component</button>
+<!--              <button @click="component = !component">Show vue component</button>-->
             </div>
           </section>
 
           <!-- expamle vue component -->
-          <example-component v-if="component" />
+<!--          <example-component v-if="component" />-->
+          <!-- modal with validate -->
+          <div>
+            <button class="btn btnPrimary" @click="modalView = !modalView">Show modal with form + validate</button>
+            <modal-component v-show="modalView" @close="modalView = false"/>
+          </div>
         </div>
 
         <footer></footer>
