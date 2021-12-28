@@ -19,13 +19,11 @@
 <!--              <button @click="component = !component">Show vue component</button>-->
             </div>
           </section>
-
-          <!-- expamle vue component -->
-<!--          <example-component v-if="component" />-->
-          <!-- modal with validate -->
           <div>
-            <button class="btn btnPrimary" @click="modalView = !modalView">Show modal with form + validate</button>
-            <modal-component v-show="modalView" @close="modalView = false"/>
+            <login-button />
+          </div>
+          <div>
+            <notify-component />
           </div>
         </div>
 
